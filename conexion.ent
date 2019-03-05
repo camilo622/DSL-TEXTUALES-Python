@@ -1,0 +1,15 @@
+entity Conexion {
+	host : string
+	adapter : string
+	enconding : string
+	database : string 
+	schema_search_path : string
+
+}
+
+
+
+
+
+
+

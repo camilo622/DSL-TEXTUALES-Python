@@ -1,0 +1,24 @@
+entity Persona {
+  cedula : integer
+  nombre : varchar       // Nombre de la persona
+  apellido : varchar       // Apellido de la persona
+  direccion: varchar    // It is defined by the Comment rule in the grammar
+  edad: integer        // integer and string are built-in objects
+  telefono : varchar       // Nombre de la persona
+  correo : varchar       // mail de la persona
+}                     // See entity_test.py
+
+entity Trabajo {
+  id : integer
+  direccion : varchar
+  ciudad : varchar
+  pais : varchar
+}
+
+entity Telefono {
+  id : integer
+  indicador : varchar
+  numero : varchar
+}
+
+

@@ -1,0 +1,57 @@
+
+    digraph xtext {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    nodesep = 0.3
+    edge[dir=black,arrowtail=empty]
+
+
+50212816 -> 50209512 [label="entities:0" arrowtail=diamond dir=both]
+50209512 -> 50212424 [label="properties:0" arrowtail=diamond dir=both]
+50212424 -> 49020768 [label="type" ]
+49020768[label="{string:SimpleType|}"]
+50212424[label="{nombre:Property|}"]
+50209512 -> 50212312 [label="properties:1" arrowtail=diamond dir=both]
+50212312 -> 49020768 [label="type" ]
+50212312[label="{apellido:Property|}"]
+50209512 -> 50212032 [label="properties:2" arrowtail=diamond dir=both]
+50212032 -> 50211976 [label="type" ]
+50211976 -> 50241832 [label="properties:0" arrowtail=diamond dir=both]
+50241832 -> 49020768 [label="type" ]
+50241832[label="{calle:Property|}"]
+50211976 -> 50241944 [label="properties:1" arrowtail=diamond dir=both]
+50241944 -> 49020768 [label="type" ]
+50241944[label="{ciudad:Property|}"]
+50211976 -> 50242056 [label="properties:2" arrowtail=diamond dir=both]
+50242056 -> 49020768 [label="type" ]
+50242056[label="{pais:Property|}"]
+50211976[label="{Direccion:Entity|}"]
+50212032[label="{direccion:Property|}"]
+50209512 -> 50209344 [label="properties:3" arrowtail=diamond dir=both]
+50209344 -> 38631576 [label="type" ]
+38631576[label="{integer:SimpleType|}"]
+50209344[label="{edad:Property|}"]
+50209512 -> 50210856 [label="properties:4" arrowtail=diamond dir=both]
+50210856 -> 50212368 [label="type" ]
+50212368 -> 50242280 [label="properties:0" arrowtail=diamond dir=both]
+50242280 -> 49020768 [label="type" ]
+50242280[label="{indicador:Property|}"]
+50212368 -> 50242336 [label="properties:1" arrowtail=diamond dir=both]
+50242336 -> 49020768 [label="type" ]
+50242336[label="{numero:Property|}"]
+50212368[label="{Telefono:Entity|}"]
+50210856[label="{telefono:Property|}"]
+50209512 -> 49064256 [label="properties:5" arrowtail=diamond dir=both]
+49064256 -> 49020768 [label="type" ]
+49064256[label="{correo:Property|}"]
+50209512[label="{Persona:Entity|}"]
+50212816 -> 50211976 [label="entities:1" arrowtail=diamond dir=both]
+50212816 -> 50212368 [label="entities:2" arrowtail=diamond dir=both]
+50212816[label="{:EntityModel|types:list=[]\l}"]
+
+}

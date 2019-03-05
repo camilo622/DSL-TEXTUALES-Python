@@ -1,0 +1,21 @@
+class {{entity.name|capitalize}} {
+	attr_accessor{% for property in entity.properties %}{% if loop.last%}{% if property is entity %} :{{name|capitalize}}{{property.name}}{% else %} :{{rubytype}}{{property.name}}{% endif %}{% else %}{% if property is entity %} :{{name|capitalize}}{{property.name}},{% else %} :{{rubytype}}{{property.name}},{% endif %}{% endif %}{% endfor %} 
+	
+	
+	def initialize ({% for property in entity.properties %}{% if loop.last%}{% if property is entity %}{{name}}{{property.name}}{% else %}{{property.name}}	{% endif %}{% else %}{% if property is entity %}{{name}}{{property.name}},{% else %}{{property.name}},{% endif %}{% endif %}{% endfor %})
+	
+	 
+	{% for property in entity.properties %}{% if property is entity %}
+	    @{{property.name}} = {{property.name}}
+ 	    {% else %}
+  	    @{{property.name}} = {{property.name}}
+ 	    {% endif %}
+	{% endfor %}
+	end
+}
+end
+end
+
+
+
+
